@@ -29,7 +29,7 @@ class Item:
         # convert to MariaDB TIMESTAMP
         self.created = created
         if self.created is not None:
-            self.created = ciso8601.parse_datetime_as_naive(created)
+            self.created = ciso8601.parse_datetime_as_naive(self.created)
 
         self.institution = institution
         self.institution_logo = institution_logo
